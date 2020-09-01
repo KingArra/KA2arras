@@ -2140,7 +2140,7 @@
                   (clearInterval(qa),
                   Y.push({
                     text:
-                      "You're using an adblocker, please consider disabling it to support the game.",
+                        "The game detects you are using an adblocker, please consider disabling it to support the game.",
                     status: 2,
                     alpha: 0,
                     time: Date.now()
@@ -2287,7 +2287,7 @@
           g.onerror = function(a) {
             console.warn("WebSocket error", a);
             b.message ||
-              (b.message = "Socket error. Maybe another server will work.");
+              (b.message = "The connection was lost for an unknown reason. Maybe check your internet, or if the server is down?.");
             b.isInGame = !1;
           };
           return g;
@@ -4307,7 +4307,7 @@
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "2TDM" }
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
