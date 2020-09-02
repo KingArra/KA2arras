@@ -2287,7 +2287,7 @@
           g.onerror = function(a) {
             console.warn("WebSocket error", a);
             b.message ||
-              (b.message = "The connection was lost for an unknown reason. Maybe check your internet, or if the server is down?.");
+              (b.message = "The server is now in Developer Testing Mode; No players may join!");
             b.isInGame = !1;
           };
           return g;
@@ -4330,7 +4330,7 @@
             id: "4",
             type: "4TDM",
             code: "glitch-worldwide-4",
-            at: p.glitch('clean-uttermost-side'),
+            at: p.glitch('closedregionffal'),
             prefer: !0,
            // featured: 1, // For Featured Status.
                       },
