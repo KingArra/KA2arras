@@ -4286,7 +4286,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["East (US)", null],
+            worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4329,7 +4329,7 @@
             visible: 0,
             id: "4",
             type: "4TDM",
-            code: "glitch-worldwide-4",
+            code: "glitch-montreal-4",
             at: p.glitch('graceful-heady-chocolate'),
             prefer: !0,
            // featured: 1, // For Featured Status.
@@ -4338,7 +4338,7 @@
             visible: 0,
             id: "2",
             type: "FFA Maze",
-            code: "glitch-worldwide-m",
+            code: "glitch-montreal-m",
             at: p.glitch('succulent-panoramic-nutria'),
             prefer: !0,
            // featured: 1, // For Featured Status.
@@ -4348,7 +4348,7 @@
             visible: 0,
             id: "3",
             type: "Defender Mode",
-            code: "glitch-worldwide-3",
+            code: "glitch-montreal-3",
             at: p.glitch('destroytheattacker'),
            // featured: 1, // For Featured Status.
                 },
@@ -4356,7 +4356,7 @@
             visible: 0,
             id: "d",
             type: "4TDM Maze",
-            code: "glitch-worldwide-d",
+            code: "glitch-montreal-d",
             at: p.glitch('short-diamond-pumpkin'),
            // featured: 1, // For Featured Status.
             
