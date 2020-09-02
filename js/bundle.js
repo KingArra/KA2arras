@@ -3609,7 +3609,7 @@
                   A.upgrades.forEach(m => {
                      d > k && (k = d);
                                         h = c;
-                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
+                                        b.clickables.upgrade.place(q++, c * u, d * u, 100 * u, 100 * u);
                                         g.globalAlpha = 1;
                                         g.fillStyle = /*e(u + 10)*/l.orange;
                                         G(c, d, 100, 100);
@@ -3670,7 +3670,7 @@
                       : ((c = f), (d += 114));
                   });
                   let m = ta("Don't Upgrade", 11) + 10,
-                    t = (h + 100 + 14 + f - 15) / 2,
+                    t = (h + 100 + 14 + g - 15) / 2,
                     v = k + 100 + 14;
                   K(
                     t - m / 2,
