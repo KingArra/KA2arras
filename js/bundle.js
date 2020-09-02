@@ -4339,7 +4339,7 @@
             id: "2",
             type: "FFA Maze",
             code: "glitch-montreal-m",
-            at: p.glitch('succulent-panoramic-nutria'),
+            at: p.glitch('sugar-broken-duchess'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
