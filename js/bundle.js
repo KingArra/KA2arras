@@ -3623,19 +3623,8 @@
                     let t = D(m, A.color);
                     m = M[m].position;
                     let v = 60 / m.axis;
-                    ba(
-                      c + 50 - v * m.middle.x * Math.cos(la),
-                      d + 50 - v * m.middle.x * Math.sin(la),
-                      t,
-                      1,
-                      1,
-                      v / t.size,
-                      la,
-                      !0
-                    );
-                    m = (b.help[`KEY_CHOOSE_${x + 1}`] || "")
-                      .toLowerCase()
-                      .trim();
+                    ba(c + 50 - m * n.middle.x * Math.cos(la), d + 50 - m * n.middle.x * Math.sin(la), r, 1, 1, m / r.size, ka, !0);
+                    m = (b.help[`KEY_CHOOSE_${v+1}`] || "").toLowerCase().trim();
                     !b.mobile && m
                       ? (aa[q - 1].draw(
                           t.name,
@@ -3660,7 +3649,7 @@
                           9.5,
                           l.guiwhite,
                           "center"
-                        );
+                                   );
                     g.strokeStyle = l.black;
                     g.globalAlpha = 1;
                     g.lineWidth = 3;
@@ -3670,7 +3659,7 @@
                       : ((c = f), (d += 114));
                   });
                   let m = ta("Don't Upgrade", 11) + 10,
-                    t = (h + 100 + 14 + g - 15) / 2,
+                    t = (h + 100 + 14 + f - 15) / 2,
                     v = k + 100 + 14;
                   K(
                     t - m / 2,
