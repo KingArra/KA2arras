@@ -2287,7 +2287,7 @@
           g.onerror = function(a) {
             console.warn("WebSocket error", a);
             b.message ||
-              (b.message = "The server is now in Developer Testing Mode; No players may join!");
+              (b.message = "The connection was lost for an unknown reason. Maybe check your internet, or if the server is down?.");
             b.isInGame = !1;
           };
           return g;
@@ -3609,7 +3609,7 @@
                   A.upgrades.forEach(m => {
                      d > k && (k = d);
                                         h = c;
-                                        b.clickables.upgrade.place(q++, c * u, d * u, 100 * u, 100 * u);
+                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
                                         g.globalAlpha = 1;
                                         g.fillStyle = /*e(u + 10)*/l.orange;
                                         G(c, d, 100, 100);
@@ -3670,7 +3670,7 @@
                       : ((c = f), (d += 114));
                   });
                   let m = ta("Don't Upgrade", 11) + 10,
-                    t = (h + 100 + 14 + g - 15) / 2,
+                    t = (h + 100 + 14 + f - 15) / 2,
                     v = k + 100 + 14;
                   K(
                     t - m / 2,
@@ -3971,7 +3971,7 @@
           var c = [
             [
               "Tip: You can view and edit your keybinds in the options menu.",
-              "Tip: You can play on mobile by just going to ka2-arras.glitch.me on your phone!"
+              "Tip: You can play on mobile by just going to arras.io on your phone!"
             ],
             [
               "Tip: You can have the shield and health bar be separated by going to the options menu.",
@@ -3981,7 +3981,7 @@
               "Tip: You can create your own theme with the custom theme makerin the link on the options menu."
             ],
             [
-              "Police Boosters can get you if you abuse the game!",
+              "Teaming in FFA or FFA Maze is frowned upon, but when taken to the extremes, you can be punished.",
               "Witch hunting is when you continuously target someone and follow them. This is frowned upon, but when taken to the extremes, you can be punished.",
               "Multiboxing is when you use a script to control multiple tanks at the same time. This is considered CHEATING and will result in a ban."
             ]
@@ -4286,7 +4286,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["Worldwide", null],
+            worldwide: ["East (US)", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4307,7 +4307,7 @@
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "4TDM" }
+              { id: "4", to: "4 Team", end: "2TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
@@ -4329,8 +4329,8 @@
             visible: 0,
             id: "4",
             type: "4TDM",
-            code: "glitch-montreal-4",
-            at: p.glitch('lateral-treasure-breeze'),
+            code: "glitch-worldwide-4",
+            at: p.glitch('clean-uttermost-side'),
             prefer: !0,
            // featured: 1, // For Featured Status.
                       },
@@ -4338,8 +4338,8 @@
             visible: 0,
             id: "2",
             type: "FFA Maze",
-            code: "glitch-montreal-m",
-            at: p.glitch('sugar-broken-duchess'),
+            code: "glitch-worldwide-m",
+            at: p.glitch('succulent-panoramic-nutria'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4348,7 +4348,7 @@
             visible: 0,
             id: "3",
             type: "Defender Mode",
-            code: "glitch-montreal-3",
+            code: "glitch-worldwide-3",
             at: p.glitch('destroytheattacker'),
            // featured: 1, // For Featured Status.
                 },
@@ -4356,7 +4356,7 @@
             visible: 0,
             id: "d",
             type: "4TDM Maze",
-            code: "glitch-montreal-d",
+            code: "glitch-worldwide-d",
             at: p.glitch('short-diamond-pumpkin'),
            // featured: 1, // For Featured Status.
             
