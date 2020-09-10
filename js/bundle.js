@@ -4286,7 +4286,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["East (US)", null],
+            worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4301,13 +4301,13 @@
             [{ id: "p", to: "Private" }],
             [{ id: "e", dynamic: "word" }],
             [{ id: "w", dynamic: "words" }],
-            [{ id: "o", to: "Open" }],
-            [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
+            [{ id: "o", to: "Maze" }],
+            [{ id: "m", to: "Developer Server", delay: !0, remove: "f" }],
             [
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "2TDM" }
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
@@ -4329,8 +4329,8 @@
             visible: 0,
             id: "4",
             type: "4TDM",
-            code: "glitch-worldwide-4",
-            at: p.glitch(''),
+            code: "glitch-montreal-4",
+            at: p.glitch('lateral-treasure-breeze'),
             prefer: !0,
            // featured: 1, // For Featured Status.
                       },
@@ -4338,8 +4338,8 @@
             visible: 0,
             id: "2",
             type: "FFA Maze",
-            code: "glitch-worldwide-m",
-            at: p.glitch('succulent-panoramic-nutria'),
+            code: "glitch-montreal-m",
+            at: p.glitch('sugar-broken-duchess'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4348,7 +4348,7 @@
             visible: 0,
             id: "3",
             type: "Defender Mode",
-            code: "glitch-worldwide-3",
+            code: "glitch-montreal-3",
             at: p.glitch('destroytheattacker'),
            // featured: 1, // For Featured Status.
                 },
@@ -4356,8 +4356,15 @@
             visible: 0,
             id: "d",
             type: "4TDM Maze",
-            code: "glitch-worldwide-d",
+            code: "glitch-montreal-d",
             at: p.glitch('short-diamond-pumpkin'),
+                    },
+          {
+            visible: 0,
+            id: "d",
+            type: "4TDM Maze",
+            code: "glitch-montreal-o",
+            at: p.glitch(''),
            // featured: 1, // For Featured Status.
             
   }, 
