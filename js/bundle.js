@@ -3546,7 +3546,7 @@
                                     K(c, c + 200, d + 7, 11, l.grey);
                                     K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
                                     ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
-                                  if (b.label.includes('₭Λ2'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
+                                  if (b.label.includes('ҠΛ2'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
                                     let f = 14 / b.position.axis;
                                     ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
                                     d += 18
@@ -4301,7 +4301,7 @@
             id: "2",
             type: "FFA Maze",
             code: "glitch-montreal-m",
-            at: p.glitch('sugar-broken-duchess'),
+            at: p.glitch(''),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4326,7 +4326,7 @@
             id: "d",
             type: "4TDM Maze",
             code: "glitch-montreal-o",
-            at: p.glitch(''),
+            at: p.glitch('sugar-broken-duchess'),
            // featured: 1, // For Featured Status.
             
   }, 
