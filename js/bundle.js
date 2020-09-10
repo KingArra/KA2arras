@@ -3532,67 +3532,29 @@
                   );
                 }
               }
-              b.mobile && L(1.25);
-              b.mobile && L(1.4);
-              if (!B.graphical.screenshotMode) {
-                let c = b.screenWidth - 200 - 20,
-                  d = 48;
-                b.mobile &&
-                  (d +=
-                    (b.canSkill ? (200 / 3 / 1.4) * a.get() : 0) +
-                    (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c
-                      ? (100 / 1.4) * k.get()
-                      : 0));
-                0 < O.data.length &&
-                  V.draw(
-                    "Scoreboard",
-                    Math.round(c + 100) + 0.5,
-                    Math.round(d - 10) + 0.5,
-                    18,
-                    l.guiwhite,
-                    "center"
-                  );
-                for (
-                  let a = 0;
-                  a < O.data.length && (!b.mobile || 6 > a);
-                  a++
-                ) {
-                  let b = O.data[a];
-                  K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
-                  K(c, c + 200, d + 7, 11, l.grey);
-                  K(
-                    c,
-                    c + 200 * Math.min(1, b.score / na),
-                    d + 7,
-                    10.5,
-                    b.barColor
-                  );
-                  ca[a].draw(
-                    b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
-                    c + 100,
-                    d + 7,
-                    9,
-                    l.guiwhite,
-                    "center",
-                    !0
-                  );
-                  let f = 14 / b.position.axis;
-                  ba(
-                    c - 21 - f * b.position.middle.x * 0.707,
-                    d + 7 + f * b.position.middle.x * 0.707,
-                    b.image,
-                    1 / f,
-                    1,
-                    (f * f) / b.image.size,
-                    -Math.PI / 4,
-                    !0
-                  );
-                  d += 18;
-                }
-              }
-              b.mobile && L(1 / 1.4);
-              {
-                b.canUpgrade = 0 < A.upgrades.length && !(b.mobile && b.died);
+                                  b.mobile && L(1.25);
+                            b.mobile && L(1.4);
+                            if (!B.graphical.screenshotMode) {
+                                let c = b.screenWidth - 200 - 20,
+                                    d = 48;
+                                b.mobile && (d += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c ? 100 / 1.4 * k.get() : 0));
+                                0 < O.data.length && V.draw("Scoreboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
+                                    l.guiwhite, "center");
+                                for (let a = 0; a < O.data.length && (!b.mobile || 6 > a); a++) {
+                                    let b = O.data[a];
+                                    K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
+                                    K(c, c + 200, d + 7, 11, l.grey);
+                                    K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
+                                    ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
+                                  if (b.label.includes('кΛ2'))ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.blue, "center", !0);
+                                    let f = 14 / b.position.axis;
+                                    ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
+                                    d += 18
+                                }
+                            }
+                            b.mobile && L(1 / 1.4); {
+                                b.canUpgrade = 0 < A.upgrades.length &&
+                                    !(b.mobile && b.died);
                 k.set(+b.canUpgrade);
                 let a = k.get();
                 b.clickables.upgrade.hide();
